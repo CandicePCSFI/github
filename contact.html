@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    background-color: pink;  /* Makes the background pink */
+    font-family: Arial, sans-serif;  /* Optional: Adds a clean font */
+    margin: 0;  /* Optional: Resets the margin for the body */
+    padding: 0;  /* Optional: Resets the padding for the body */
+}
+
+/* Styling for the navbar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ff94db;  /* Dark color for navbar */
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change the color of links when hovered */
+.navbar li a:hover {
+    background-color: #575757;
+}
+
+/* Styling for the sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;  /* Optional: Gives sections a white background to stand out */
+    border-radius: 8px;  /* Optional: Rounded corners for the sections */
+}
+
+/* Style for headings */
+h1 {
+    color: #333;  /* Sets the color of headings */
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="founder.html">Founder</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+   <!--Sections-->
+   <section id="Contact">
+    <h1> Get in Touch</h1>
+    <h2> For Customer Service </h2>>
+    <h3> 
+    
+        Our customer service operating hours are 8am KST to 8pm KST, Monday to Friday.
+        Please give 2~3 business days for replies, however due to the high volume of emails we receive, there may be a delay in our response.
+        Please note that we do not process returns or refunds.
+        
+        In the case of product concerns, issues or defects, please send us an email with your order number and detailed photos of the product, in order to expedite your inquiry.
+        Please note that once we have sent the package, we are not responsible for delivery, and inquiries should be sent to the related shipping partner.
+    </h3>
+      </section> 
+
+      <section id="Contact">
+        <h1> Gmail: adora.beauty@gmail.com </h1>
+        <h1> Instagram: Adora</h1>
+        <h1> Facebook: Adora.com</h1>
+          </section>
+
+   <section id="contact">
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="YOUR_BACKEND_URL_HERE" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+    
+
+</body>
+</html>

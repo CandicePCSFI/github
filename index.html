@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout with Navbar</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3dde4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navigation bar styling */
+    .navbar {
+      width: 100%;
+      background-color: #ffb8f9;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #da0000;
+    }
+
+    /* Container for cards */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin-top: 80px; /* To prevent overlap with fixed navbar */
+    }
+
+    /* Card styling */
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card .content p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #ff5de4;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card .content p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #ff5de4;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card .content p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #ff5de4;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card .content p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #ff5de4;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card .content p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #ff5de4;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card .content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card .content p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      color: #ff5de4;
+    }
+    /* Pink button styling */
+    .pink-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: pink;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .pink-button:hover {
+      background-color: hotpink;
+    }
+
+    /* Styling for the sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;  /* Optional: Gives sections a white background to stand out */
+    border-radius: 8px;  /* Optional: Rounded corners for the sections */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="founder.html">Founder</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <img src="images/Screenshot 2025-03-03 233614.jpg" alt="Card Image">
+
+  <!-- Card Layout -->
+  <div class="container">
+    <div class="card">
+      <img src="images/download (1).jpg" alt="Card Image">
+      <div class="content">
+        <h3>Blush</h3>
+        <p>A silky, buildable blush that adds a natural flush to your cheeks, available in soft pinks and warm peaches for a fresh, glowing finish.</p>
+        <button class="pink-button">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/images.jpg" alt="Card Image">
+      <div class="content">
+        <h3>Lipstick</h3>
+        <p>Rich, creamy lipstick that provides vibrant color and a comfortable feel. Available in matte, satin, and glossy finishes for long-lasting wear.</p>
+        <button class="pink-button">Add to Cart</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/images (1).jpg" alt="Card Image">
+      <div class="content">
+        <h3>Cushion Foundation</h3>
+        <p>A lightweight, hydrating foundation that gives you a smooth, flawless complexion with buildable coverage. Perfect for a natural, dewy finish.</p>
+        <button class="pink-button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Sections -->
+  <section id="Service">
+    <h1>Why Choose Us?</h1>
+    <p>When it comes to beauty, we believe in the power of self-expression. Our products are more than just tools for makeup; they are a gateway to confidence, creativity, and authenticity. We understand that each individual is unique, and that’s why our makeup line is designed to empower you to embrace your own beauty—no matter who you are or where you come from. We care about the world we live in. That’s why we’re committed to sustainability in every step of our production process. From eco-friendly packaging to responsibly sourced ingredients, you can feel good about the choices you make when you buy our products.
+        When you choose our makeup, you’re choosing more than just color or coverage. You’re choosing a brand that values YOU—your style, your individuality, and your power to make a statement. You’re choosing products that make you feel beautiful inside and out.
+        So go ahead, treat yourself to the beauty you deserve. Let us help you shine brighter, be bolder, and feel more confident than ever before.
+        Thank you!</p>
+  </section>
+   
+</body>
+</html>
